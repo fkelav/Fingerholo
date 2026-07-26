@@ -206,3 +206,7 @@ remains the compatibility fallback; a Web GPU sidecar or later Tauri edition
 can be enabled for hardware tiers that pass. Python MediaPipe Tasks uses CPU on
 Windows, so a stronger GPU helps only the Web benchmark/future WebGL path,
 while a stronger CPU also improves the Python application.
+
+## License
+
+[MIT](LICENSE).

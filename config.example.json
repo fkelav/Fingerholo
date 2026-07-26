@@ -1,0 +1,18 @@
+{
+  "camera_index": 0,
+  "resolution": [1280, 720],
+  "processing_width": 480,
+  "opacity": 0.68,
+  "smoothing_amount": 0.3,
+  "output_filename": "output/finger_hologram_{timestamp}.mp4",
+  "default_overlay": "1",
+  "asset_directory": "assets",
+  "detection_sensitivity": 0.55,
+  "tracking_grace_seconds": 0.35,
+  "max_tracking_result_age_seconds": 0.2,
+  "tracking_backend": "auto",
+  "hand_model_path": "models/hand_landmarker.task",
+  "recording_queue_size": 2,
+  "performance_output_filename": "artifacts/performance_{timestamp}.json",
+  "record_camera_background": true
+}

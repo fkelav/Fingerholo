@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finger Hologram GPU Benchmark</title>
+  </head>
+  <body>
+    <main>
+      <section class="controls">
+        <h1>Finger Hologram GPU Benchmark</h1>
+        <p>
+          MediaPipe Hand Landmarker runs in a worker with one frame in flight.
+          Runtime assets are local after <code>npm run prepare-assets</code>.
+        </p>
+        <div class="row">
+          <label>
+            Inference width
+            <select id="width">
+              <option value="320">320</option>
+              <option value="480" selected>480</option>
+              <option value="640">640</option>
+              <option value="720">720</option>
+            </select>
+          </label>
+          <button id="camera">Start camera</button>
+          <label class="file">
+            Test a recorded clip
+            <input id="file" type="file" accept="video/*" />
+          </label>
+          <label>
+            <input id="gpu-confirmed" type="checkbox" />
+            GPU delegate verified in browser diagnostics
+          </label>
+          <button id="export" disabled>Export metrics</button>
+        </div>
+        <pre id="status">Preparing worker…</pre>
+      </section>
+      <section class="stage">
+        <video id="video" playsinline muted></video>
+        <canvas id="overlay"></canvas>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

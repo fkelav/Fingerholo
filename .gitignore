@@ -1,4 +1,4 @@
-# Python environments and caches
+
 .venv/
 venv/
 env/
@@ -11,13 +11,13 @@ __pycache__/
 .tox/
 .nox/
 
-# Test and coverage output
+
 .coverage
 .coverage.*
 htmlcov/
 coverage.xml
 
-# Runtime output and local configuration
+
 artifacts/
 output/
 config.json
@@ -38,28 +38,28 @@ secrets.json
 *.p12
 *.pfx
 
-# User-provided custom media (keep the instructions)
+
 custom/*
 !custom/README.md
 
-# Python/PyInstaller build output
+
 build/
 dist/
 *.egg-info/
 
-# Local agent and editor state
+
 AGENTS.md
 .agents/
 .idea/
 .vscode/
 *.code-workspace
 
-# Operating-system files
+
 .DS_Store
 Thumbs.db
 Desktop.ini
 
-# Web benchmark output and disposable fixtures
+
 gpu_benchmark/node_modules/
 gpu_benchmark/dist/
 gpu_benchmark/public/fixture.*
